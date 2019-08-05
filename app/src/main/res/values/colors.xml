@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="translucent">#80FFFFFF</color>
+    <color name="transparentgray">#C0333333</color>
+    <color name="lightblue">#D3E6FF</color>
+    <color name="LightGray">#F4F3F3</color>
+    <color name="DarkGray">#767676</color>
+
+    <color name="ColorWhite">#fff</color>
+    <color name="ColorPrimary">#3A5795</color>
+    <color name="ColorPrimaryDark">#3A5795</color>
+    <color name="MainAppBackColor">#EDF0F5</color>
+
+    <color name="colorPrimary_Facebook">#273B67</color>
+    <color name="colorPrimaryDark_FaceBookDark">#192541</color>
+    <color name="colortextColorPrimary">#FFFFFF</color>
+    <color name="colortextColorSecondary">#000000</color>
+    <color name="actionMenuTextColor">#000000</color>
+
+    <color name="BGCaption">#DEE9FF</color>
+
+</resources>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_conainer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greenback"
+
+    tools:context="com.apollo.wordpuzzle.MainActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_conainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/toolbar_buy_coin_container"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:onClick="onShowShopWindowClicked"
+                android:background="@drawable/corner_left_top"
+                android:orientation="horizontal"
+                android:paddingTop="3dp"
+                android:paddingBottom="13dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imageButton"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@null"
+
+                    app:srcCompat="@drawable/btn_coin" />
+
+                <TextView
+                    android:id="@+id/txtCoinCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="0"
+                    android:textColor="#fff"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corner_right_top"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:id="@+id/toolbar_coin_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="13dp">
+
+                    <TextView
+                        android:id="@+id/txtLevelIndex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="7dp"
+                        android:text="1"
+                        android:textColor="#fff"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:id="@+id/imageHelp"
+                        android:onClick="onShowHelpClicked"
+                        android:layout_width="40dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/btnhelp" />
+                    <ImageView
+                        android:id="@+id/imageSetting"
+                        android:onClick="onShowSettingsClicked"
+                        android:layout_width="40dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/setting" />
+                    <ImageView
+                        android:id="@+id/btnList"
+                        android:onClick="onShowChapterListClicked"
+                        android:layout_width="40dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/btnlist" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/frame"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/final_word_conainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llContainers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+            <RelativeLayout
+                android:id="@+id/myCanvasContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/myCanvas"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <ImageView
+                    android:id="@+id/imageStar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/star" />
+
+                <ImageView
+                    android:id="@+id/imageFirework"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/fireworks" />
+
+                <LinearLayout
+                    android:id="@+id/bulb"
+                    android:layout_width="60dp"
+                    android:layout_height="85dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/bulb"
+                    android:orientation="horizontal"
+                    android:onClick="onBulbClicked"
+                    >
+
+                    <TextView
+                        android:id="@+id/txtBulbCoinCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="50dp"
+                        android:text="100"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:id="@+id/imagebulb"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="50dp"
+                        app:srcCompat="@drawable/btn_coin" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgAboutUs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onShowAboutUsClicked"
+
+                    android:src="@drawable/man" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

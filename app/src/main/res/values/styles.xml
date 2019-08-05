@@ -1,0 +1,43 @@
+<resources>
+
+    <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary_Facebook</item>
+
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_FaceBookDark</item>
+
+        <item name="android:textColorPrimary">@color/colortextColorPrimary</item>
+
+        <item name="android:textColorSecondary">@color/colortextColorSecondary</item>
+
+        <item name="actionMenuTextColor">@color/actionMenuTextColor</item>
+
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="NoActionBarTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+
+    <style name="PopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+
+    <style name="NoActionBarTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="NoActionBarTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

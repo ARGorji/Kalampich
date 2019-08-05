@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgwood1"
+    android:id="@+id/popup_element"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/InsideFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center"
+
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imgbuy1000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buy1000"
+            android:layout_gravity="center"
+            android:layout_weight="0.05" />
+        <ImageView
+            android:id="@+id/imgbuy2000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buy2000"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.05"
+            />
+        <ImageView
+            android:id="@+id/imgbuy3000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:background="@drawable/buy3000"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:id="@+id/imgbuy5000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+
+            android:background="@drawable/buy5000"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:id="@+id/imgbuy10000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+
+            android:background="@drawable/buy10000"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:id="@+id/imgbuy15000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+
+            android:background="@drawable/buy15000"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="54dp"
+        android:src="@drawable/btnclose" />
+
+</RelativeLayout>

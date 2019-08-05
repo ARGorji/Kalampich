@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llNextLevel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/transparentwhite"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:gravity="right"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:text="حروف را لمس کنید و با وصل کردن آنها به هم، کلمه مخفی را پیدا کنید.\nممکن است چند کلمه با حروف مشخصی ساخته شوند. فقط یک کلمه، جواب هر مرحله است." />
+        <ImageView
+            android:id="@+id/imgScreenshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:src="@drawable/screenhelp"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
